@@ -8,6 +8,16 @@ Aplikacja mobilna do nauki polskich znaków drogowych. Ucz się znaków ostrzega
 - 🧪 **Tryb testu** - Sprawdź swoją wiedzę w quizie z 4 opcjami odpowiedzi
 - 🎯 **40 znaków ostrzegawczych** - Kompletna baza polskich znaków drogowych kategorii A
 
+## Download
+
+### Wersja Preview
+
+Pobierz najnowszą wersję preview aplikacji na android:
+
+- [📱 Pobierz wersję preview](https://expo.dev/accounts/foxlis/projects/ZnakiDrogaApp/builds/62b76eea-1090-41ae-87e5-fbfd7b9acf3e)
+
+Wersja preview zawiera pełną funkcjonalność aplikacji i jest gotowa do testowania na urządzeniach mobilnych.
+
 ## Wymagania
 
 - Node.js (wersja 18 lub nowsza)
