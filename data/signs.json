@@ -1,0 +1,256 @@
+{
+  "signs": [
+    {
+      "id": "A-1",
+      "name": "Niebezpieczny zakręt w prawo",
+      "category": "ostrzegawcze",
+      "image": "544px-PL_road_sign_A-1.svg.png"
+    },
+    {
+      "id": "A-2",
+      "name": "Niebezpieczny zakręt w lewo",
+      "category": "ostrzegawcze",
+      "image": "544px-PL_road_sign_A-2.svg.png"
+    },
+    {
+      "id": "A-3",
+      "name": "Niebezpieczne zakręty - pierwszy w prawo",
+      "category": "ostrzegawcze",
+      "image": "544px-PL_road_sign_A-3.svg.png"
+    },
+    {
+      "id": "A-4",
+      "name": "Niebezpieczne zakręty - pierwszy w lewo",
+      "category": "ostrzegawcze",
+      "image": "544px-PL_road_sign_A-4.svg.png"
+    },
+    {
+      "id": "A-5",
+      "name": "Skrzyżowanie dróg",
+      "category": "ostrzegawcze",
+      "image": "544px-PL_road_sign_A-5.svg.png"
+    },
+    {
+      "id": "A-6a",
+      "name": "Skrzyżowanie z drogą podporządkowaną występującą po obu stronach",
+      "category": "ostrzegawcze",
+      "image": "544px-PL_road_sign_A-6a.svg.png"
+    },
+    {
+      "id": "A-6b",
+      "name": "Skrzyżowanie z drogą podporządkowaną występującą po prawej stronie",
+      "category": "ostrzegawcze",
+      "image": "544px-PL_road_sign_A-6b.svg.png"
+    },
+    {
+      "id": "A-6c",
+      "name": "Skrzyżowanie z drogą podporządkowaną występującą po lewej stronie",
+      "category": "ostrzegawcze",
+      "image": "544px-PL_road_sign_A-6c.svg.png"
+    },
+    {
+      "id": "A-6d",
+      "name": "Wlot drogi jednokierunkowej z prawej strony",
+      "category": "ostrzegawcze",
+      "image": "544px-PL_road_sign_A-6d.svg.png"
+    },
+    {
+      "id": "A-6e",
+      "name": "Wlot drogi jednokierunkowej z lewej strony",
+      "category": "ostrzegawcze",
+      "image": "544px-PL_road_sign_A-6e.svg.png"
+    },
+    {
+      "id": "A-7",
+      "name": "Ustąp pierwszeństwa",
+      "category": "ostrzegawcze",
+      "image": "544px-PL_road_sign_A-7.svg.png"
+    },
+    {
+      "id": "A-8",
+      "name": "Skrzyżowanie o ruchu okrężnym",
+      "category": "ostrzegawcze",
+      "image": "544px-PL_road_sign_A-8.svg.png"
+    },
+    {
+      "id": "A-9",
+      "name": "Przejazd kolejowy z zaporami",
+      "category": "ostrzegawcze",
+      "image": "544px-PL_road_sign_A-9.svg.png"
+    },
+    {
+      "id": "A-10",
+      "name": "Przejazd kolejowy bez zapór",
+      "category": "ostrzegawcze",
+      "image": "544px-PL_road_sign_A-10.svg.png"
+    },
+    {
+      "id": "A-11",
+      "name": "Nierówna droga",
+      "category": "ostrzegawcze",
+      "image": "544px-PL_road_sign_A-11.svg.png"
+    },
+    {
+      "id": "A-11a",
+      "name": "Próg zwalniający",
+      "category": "ostrzegawcze",
+      "image": "544px-PL_road_sign_A-11a.svg.png"
+    },
+    {
+      "id": "A-12a",
+      "name": "Zwężenie jezdni - dwustronne",
+      "category": "ostrzegawcze",
+      "image": "544px-PL_road_sign_A-12a.svg.png"
+    },
+    {
+      "id": "A-12b",
+      "name": "Zwężenie jezdni - prawostronne",
+      "category": "ostrzegawcze",
+      "image": "544px-PL_road_sign_A-12b.svg.png"
+    },
+    {
+      "id": "A-12c",
+      "name": "Zwężenie jezdni - lewostronne",
+      "category": "ostrzegawcze",
+      "image": "544px-PL_road_sign_A-12c.svg.png"
+    },
+    {
+      "id": "A-13",
+      "name": "Ruchomy most",
+      "category": "ostrzegawcze",
+      "image": "544px-PL_road_sign_A-13.svg.png"
+    },
+    {
+      "id": "A-14",
+      "name": "Robotnicy na drodze",
+      "category": "ostrzegawcze",
+      "image": "544px-PL_road_sign_A-14.svg.png"
+    },
+    {
+      "id": "A-15",
+      "name": "Śliska jezdnia",
+      "category": "ostrzegawcze",
+      "image": "544px-PL_road_sign_A-15.svg.png"
+    },
+    {
+      "id": "A-16",
+      "name": "Przejście dla pieszych",
+      "category": "ostrzegawcze",
+      "image": "544px-PL_road_sign_A-16.svg.png"
+    },
+    {
+      "id": "A-17",
+      "name": "Dzieci",
+      "category": "ostrzegawcze",
+      "image": "544px-PL_road_sign_A-17.svg.png"
+    },
+    {
+      "id": "A-18a",
+      "name": "Zwierzęta gospodarskie",
+      "category": "ostrzegawcze",
+      "image": "544px-PL_road_sign_A-18a.svg.png"
+    },
+    {
+      "id": "A-18b",
+      "name": "Zwierzęta dzikie",
+      "category": "ostrzegawcze",
+      "image": "544px-PL_road_sign_A-18b.svg.png"
+    },
+    {
+      "id": "A-19",
+      "name": "Boczny wiatr",
+      "category": "ostrzegawcze",
+      "image": "544px-PL_road_sign_A-19.svg.png"
+    },
+    {
+      "id": "A-20",
+      "name": "Odcinek jezdni o ruchu dwukierunkowym",
+      "category": "ostrzegawcze",
+      "image": "544px-PL_road_sign_A-20.svg.png"
+    },
+    {
+      "id": "A-21",
+      "name": "Tramwaj",
+      "category": "ostrzegawcze",
+      "image": "544px-PL_road_sign_A-21.svg.png"
+    },
+    {
+      "id": "A-22",
+      "name": "Niebezpieczny zjazd",
+      "category": "ostrzegawcze",
+      "image": "544px-PL_road_sign_A-22.svg.png"
+    },
+    {
+      "id": "A-23",
+      "name": "Niebezpieczne wzniesienie",
+      "category": "ostrzegawcze",
+      "image": "544px-PL_road_sign_A-23.svg.png"
+    },
+    {
+      "id": "A-24",
+      "name": "Rowerzyści",
+      "category": "ostrzegawcze",
+      "image": "544px-PL_road_sign_A-24.svg.png"
+    },
+    {
+      "id": "A-25",
+      "name": "Spadające odłamki skalne",
+      "category": "ostrzegawcze",
+      "image": "544px-PL_road_sign_A-25.svg.png"
+    },
+    {
+      "id": "A-26",
+      "name": "Lotnisko",
+      "category": "ostrzegawcze",
+      "image": "544px-PL_road_sign_A-26.svg.png"
+    },
+    {
+      "id": "A-27",
+      "name": "Nabrzeże lub brzeg",
+      "category": "ostrzegawcze",
+      "image": "544px-PL_road_sign_A-27.svg.png"
+    },
+    {
+      "id": "A-28",
+      "name": "Sypki żwir",
+      "category": "ostrzegawcze",
+      "image": "544px-PL_road_sign_A-28.svg.png"
+    },
+    {
+      "id": "A-29",
+      "name": "Sygnały świetlne",
+      "category": "ostrzegawcze",
+      "image": "544px-PL_road_sign_A-29.svg.png"
+    },
+    {
+      "id": "A-30",
+      "name": "Inne niebezpieczeństwo",
+      "category": "ostrzegawcze",
+      "image": "544px-PL_road_sign_A-30.svg.png"
+    },
+    {
+      "id": "A-31",
+      "name": "Niebezpieczne pobocze",
+      "category": "ostrzegawcze",
+      "image": "544px-PL_road_sign_A-31.svg.png"
+    },
+    {
+      "id": "A-32",
+      "name": "Oszronienie jezdni",
+      "category": "ostrzegawcze",
+      "image": "544px-PL_road_sign_A-32.svg.png"
+    },
+    {
+      "id": "A-33",
+      "name": "Zator drogowy",
+      "category": "ostrzegawcze",
+      "image": "544px-PL_road_sign_A-33.svg.png"
+    },
+    {
+      "id": "A-34",
+      "name": "Wypadek drogowy",
+      "category": "ostrzegawcze",
+      "image": "544px-PL_road_sign_A-34.svg.png"
+    }
+  ]
+}

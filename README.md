@@ -1,50 +1,183 @@
-# Welcome to your Expo app 👋
+# Znaki Drogowe App 🚦
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Aplikacja mobilna do nauki polskich znaków drogowych. Ucz się znaków ostrzegawczych w trybie nauki lub sprawdź swoją wiedzę w quizie.
 
-## Get started
+## Funkcjonalności
 
-1. Install dependencies
+- 📚 **Tryb nauki** - Przeglądaj znaki drogowe jeden po jednym z opisami
+- 🧪 **Tryb testu** - Sprawdź swoją wiedzę w quizie z 4 opcjami odpowiedzi
+- 🎯 **40 znaków ostrzegawczych** - Kompletna baza polskich znaków drogowych kategorii A
+
+## Wymagania
+
+- Node.js (wersja 18 lub nowsza)
+- npm lub yarn
+- Expo CLI
+- EAS CLI (do budowania aplikacji)
+
+## Instalacja
+
+1. Zainstaluj zależności:
 
    ```bash
    npm install
    ```
 
-2. Start the app
+2. Zainstaluj EAS CLI globalnie (jeśli jeszcze nie masz):
 
    ```bash
-   npx expo start
+   npm install -g eas-cli
    ```
 
-In the output, you'll find options to open the app in a
+3. Zaloguj się do konta Expo:
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+   ```bash
+   eas login
+   ```
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Rozwój
 
-## Get a fresh project
-
-When you're ready, run:
+Uruchom aplikację w trybie deweloperskim:
 
 ```bash
-npm run reset-project
+npm start
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Lub uruchom na konkretnej platformie:
 
-## Learn more
+```bash
+# Android
+npm run android
 
-To learn more about developing your project with Expo, look at the following resources:
+# iOS
+npm run ios
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+# Web
+npm run web
+```
 
-## Join the community
+## Budowanie aplikacji
 
-Join our community of developers creating universal apps.
+### Android (APK)
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+#### 1. Build preview (APK do testowania)
+
+```bash
+eas build --platform android --profile preview
+```
+
+To wygeneruje plik APK, który możesz zainstalować bezpośrednio na urządzeniu Android.
+
+#### 2. Build production (AAB dla Google Play Store)
+
+```bash
+eas build --platform android --profile production
+```
+
+To wygeneruje plik AAB (Android App Bundle), który jest wymagany do publikacji w Google Play Store.
+
+#### 3. Lokalne budowanie APK (opcjonalnie)
+
+Jeśli chcesz zbudować APK lokalnie bez EAS:
+
+```bash
+# Najpierw skonfiguruj lokalne środowisko Android
+npx expo prebuild --platform android
+
+# Następnie zbuduj APK
+cd android
+./gradlew assembleRelease
+```
+
+Plik APK znajdziesz w: `android/app/build/outputs/apk/release/app-release.apk`
+
+### iOS
+
+#### 1. Build preview (do testowania)
+
+```bash
+eas build --platform ios --profile preview
+```
+
+To wygeneruje plik IPA, który możesz zainstalować na urządzeniu iOS (wymaga Apple Developer Account).
+
+#### 2. Build production (dla App Store)
+
+```bash
+eas build --platform ios --profile production
+```
+
+To wygeneruje plik IPA gotowy do przesłania do App Store Connect.
+
+#### 3. Wymagania dla iOS
+
+- Aktywne konto Apple Developer (99 USD/rok)
+- Skonfigurowane certyfikaty i profile w EAS
+- Urządzenie iOS do testowania (opcjonalnie)
+
+### Sprawdzanie statusu builda
+
+```bash
+eas build:list
+```
+
+### Pobieranie zbudowanej aplikacji
+
+Po zakończeniu builda, EAS wyśle link do pobrania aplikacji. Możesz też sprawdzić status na [expo.dev](https://expo.dev).
+
+## Publikacja w sklepach
+
+### Google Play Store
+
+1. Zbuduj aplikację w trybie production:
+   ```bash
+   eas build --platform android --profile production
+   ```
+
+2. Prześlij aplikację do Google Play:
+   ```bash
+   eas submit --platform android
+   ```
+
+### Apple App Store
+
+1. Zbuduj aplikację w trybie production:
+   ```bash
+   eas build --platform ios --profile production
+   ```
+
+2. Prześlij aplikację do App Store:
+   ```bash
+   eas submit --platform ios
+   ```
+
+## Struktura projektu
+
+```
+ZnakiDrogaApp/
+├── app/                 # Ekrany aplikacji (Expo Router)
+│   ├── index.tsx        # Ekran startowy
+│   ├── learn/          # Tryb nauki
+│   └── test/           # Tryb testu
+├── assets/             # Zasoby (obrazy, znaki)
+│   └── signs/          # Obrazy znaków drogowych
+├── data/               # Dane aplikacji
+│   └── signs.json     # Baza znaków drogowych
+└── components/         # Komponenty React Native
+```
+
+## Konfiguracja
+
+- `app.json` - Konfiguracja Expo
+- `eas.json` - Konfiguracja EAS Build
+- `package.json` - Zależności projektu
+
+## Więcej informacji
+
+- [Expo documentation](https://docs.expo.dev/)
+- [EAS Build documentation](https://docs.expo.dev/build/introduction/)
+- [Expo Router documentation](https://docs.expo.dev/router/introduction/)
+
+## Licencja
+
+Private project
