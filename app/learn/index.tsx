@@ -162,6 +162,9 @@ export default function LearnScreen() {
             >
               {selectedCategory === "ostrzegawcze" ? "ostrzegawcze" : "zakazu"}
             </ThemedText>
+            <ThemedText style={[styles.dropdownArrow, { marginLeft: 6 }]}>
+              {isDropdownOpen ? "▲" : "▼"}
+            </ThemedText>
           </TouchableOpacity>
           {isDropdownOpen && (
             <ThemedView style={styles.dropdownMenu}>
@@ -214,9 +217,6 @@ export default function LearnScreen() {
               </ThemedText>
               <ThemedText type="defaultSemiBold" style={styles.signName}>
                 {currentSign.name}
-              </ThemedText>
-              <ThemedText style={styles.category}>
-                Kategoria: {currentSign.category}
               </ThemedText>
             </ThemedView>
           </>
@@ -299,18 +299,30 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     paddingVertical: 10,
     paddingHorizontal: 14,
+    flexDirection: "row",
     alignItems: "center",
+    justifyContent: "center",
   },
   dropdownTriggerText: {
+    backgroundColor: "#007AFF",
+    borderRadius: 10,
+    paddingVertical: 10,
+    paddingHorizontal: 14,
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  dropdownArrow: {
     color: "#FFFFFF",
-    textTransform: "capitalize",
+    fontSize: 12,
+    marginLeft: 8,
   },
   dropdownMenu: {
     marginTop: 6,
     borderRadius: 10,
     borderWidth: 1,
     borderColor: "#D1D1D6",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#007AFF",
     overflow: "hidden",
   },
   dropdownItem: {
@@ -360,11 +372,6 @@ const styles = StyleSheet.create({
     textAlign: "center",
     marginBottom: 10,
     paddingHorizontal: 10,
-  },
-  category: {
-    fontSize: 14,
-    opacity: 0.6,
-    textTransform: "capitalize",
   },
   navigationContainer: {
     flexDirection: "row",
