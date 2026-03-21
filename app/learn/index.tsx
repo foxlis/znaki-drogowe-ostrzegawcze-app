@@ -13,6 +13,8 @@ interface Sign {
   image: string;
 }
 
+type LearnCategory = "ostrzegawcze" | "zakaz";
+
 // Mapa obrazów znaków - React Native wymaga statycznych require()
 const signImages: Record<string, any> = {
   "544px-PL_road_sign_A-1.svg.png": require("@/assets/signs/warning/544px-PL_road_sign_A-1.svg.png"),
@@ -109,14 +111,17 @@ export default function LearnScreen() {
   const router = useRouter();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [signs, setSigns] = useState<Sign[]>([]);
+  const [selectedCategory, setSelectedCategory] =
+    useState<LearnCategory>("ostrzegawcze");
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   useEffect(() => {
-    // Filtruj znaki ostrzegawcze oraz zakazu
     const learnSigns = signsData.signs.filter(
-      (sign) => sign.category === "ostrzegawcze" || sign.category === "zakaz",
+      (sign) => sign.category === selectedCategory,
     );
     setSigns(learnSigns);
-  }, []);
+    setCurrentIndex(0);
+  }, [selectedCategory]);
 
   const currentSign = signs[currentIndex];
   const totalSigns = signs.length;
@@ -146,9 +151,43 @@ export default function LearnScreen() {
   return (
     <ThemedView style={styles.container}>
       <ThemedView style={styles.header}>
-        <ThemedText type="title" style={styles.title}>
-          Nauka Znaków Drogowych
-        </ThemedText>
+        <ThemedView style={styles.dropdownContainer}>
+          <TouchableOpacity
+            style={styles.dropdownTrigger}
+            onPress={() => setIsDropdownOpen((prev) => !prev)}
+          >
+            <ThemedText
+              type="defaultSemiBold"
+              style={styles.dropdownTriggerText}
+            >
+              {selectedCategory === "ostrzegawcze" ? "ostrzegawcze" : "zakazu"}
+            </ThemedText>
+          </TouchableOpacity>
+          {isDropdownOpen && (
+            <ThemedView style={styles.dropdownMenu}>
+              <TouchableOpacity
+                style={styles.dropdownItem}
+                onPress={() => {
+                  setSelectedCategory("ostrzegawcze");
+                  setIsDropdownOpen(false);
+                }}
+              >
+                <ThemedText style={styles.dropdownItemText}>
+                  ostrzegawcze
+                </ThemedText>
+              </TouchableOpacity>
+              <TouchableOpacity
+                style={styles.dropdownItem}
+                onPress={() => {
+                  setSelectedCategory("zakaz");
+                  setIsDropdownOpen(false);
+                }}
+              >
+                <ThemedText style={styles.dropdownItemText}>zakazu</ThemedText>
+              </TouchableOpacity>
+            </ThemedView>
+          )}
+        </ThemedView>
         <ThemedText style={styles.counter}>
           {currentIndex + 1} / {totalSigns}
         </ThemedText>
@@ -248,6 +287,38 @@ const styles = StyleSheet.create({
   title: {
     marginBottom: 10,
     textAlign: "center",
+  },
+  dropdownContainer: {
+    width: "100%",
+    maxWidth: 260,
+    marginBottom: 10,
+    zIndex: 10,
+  },
+  dropdownTrigger: {
+    backgroundColor: "#007AFF",
+    borderRadius: 10,
+    paddingVertical: 10,
+    paddingHorizontal: 14,
+    alignItems: "center",
+  },
+  dropdownTriggerText: {
+    color: "#FFFFFF",
+    textTransform: "capitalize",
+  },
+  dropdownMenu: {
+    marginTop: 6,
+    borderRadius: 10,
+    borderWidth: 1,
+    borderColor: "#D1D1D6",
+    backgroundColor: "#FFFFFF",
+    overflow: "hidden",
+  },
+  dropdownItem: {
+    paddingVertical: 10,
+    paddingHorizontal: 14,
+  },
+  dropdownItemText: {
+    textTransform: "capitalize",
   },
   counter: {
     fontSize: 16,
