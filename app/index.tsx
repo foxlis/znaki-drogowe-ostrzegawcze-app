@@ -1,7 +1,7 @@
-import { ThemedText } from '@/components/themed-text';
-import { ThemedView } from '@/components/themed-view';
-import { useRouter } from 'expo-router';
-import { StyleSheet, TouchableOpacity } from 'react-native';
+import { ThemedText } from "@/components/themed-text";
+import { ThemedView } from "@/components/themed-view";
+import { useRouter } from "expo-router";
+import { StyleSheet, TouchableOpacity } from "react-native";
 
 export default function StartScreen() {
   const router = useRouter();
@@ -11,23 +11,20 @@ export default function StartScreen() {
       <ThemedText type="title" style={styles.title}>
         Znaki Drogowe
       </ThemedText>
-      <ThemedText style={styles.subtitle}>
-        Wybierz tryb nauki
-      </ThemedText>
-      
+
       <ThemedView style={styles.buttonContainer}>
         <TouchableOpacity
           style={styles.button}
-          onPress={() => router.push('/learn' as any)}
+          onPress={() => router.push("/learn" as any)}
         >
           <ThemedText type="defaultSemiBold" style={styles.buttonText}>
             Nauka
           </ThemedText>
         </TouchableOpacity>
-        
+
         <TouchableOpacity
           style={styles.button}
-          onPress={() => router.push('/test' as any)}
+          onPress={() => router.push("/test" as any)}
         >
           <ThemedText type="defaultSemiBold" style={styles.buttonText}>
             Test
@@ -41,8 +38,8 @@ export default function StartScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
     padding: 20,
   },
   title: {
@@ -50,21 +47,20 @@ const styles = StyleSheet.create({
   },
   subtitle: {
     marginBottom: 40,
-    textAlign: 'center',
+    textAlign: "center",
   },
   buttonContainer: {
-    width: '100%',
+    width: "100%",
     gap: 20,
   },
   button: {
-    backgroundColor: '#007AFF',
+    backgroundColor: "#007AFF",
     padding: 20,
     borderRadius: 10,
-    alignItems: 'center',
+    alignItems: "center",
   },
   buttonText: {
-    color: '#FFFFFF',
+    color: "#FFFFFF",
     fontSize: 18,
   },
 });
-

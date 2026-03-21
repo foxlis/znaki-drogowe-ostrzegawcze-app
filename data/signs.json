@@ -251,6 +251,282 @@
       "name": "Wypadek drogowy",
       "category": "ostrzegawcze",
       "image": "544px-PL_road_sign_A-34.svg.png"
+    },
+    {
+      "id": "B-1",
+      "name": "Zakaz ruchu w obu kierunkach",
+      "category": "zakaz",
+      "image": "B-1.png"
+    },
+    {
+      "id": "B-2",
+      "name": "Zakaz wjazdu",
+      "category": "zakaz",
+      "image": "B-2.png"
+    },
+    {
+      "id": "B-3",
+      "name": "Zakaz wjazdu pojazdów silnikowych, z wyjątkiem motocykli jednośladowych",
+      "category": "zakaz",
+      "image": "B-3.png"
+    },
+    {
+      "id": "B-3a",
+      "name": "Zakaz wjazdu autobusów",
+      "category": "zakaz",
+      "image": "B-3a.png"
+    },
+    {
+      "id": "B-4",
+      "name": "Zakaz wjazdu motocykli",
+      "category": "zakaz",
+      "image": "B-4.png"
+    },
+    {
+      "id": "B-5",
+      "name": "Zakaz wjazdu samochodów ciężarowych",
+      "category": "zakaz",
+      "image": "B-5.png"
+    },
+    {
+      "id": "B-6",
+      "name": "Zakaz wjazdu ciągników rolniczych",
+      "category": "zakaz",
+      "image": "B-6.png"
+    },
+    {
+      "id": "B-7",
+      "name": "Zakaz wjazdu pojazdów silnikowych z przyczepą",
+      "category": "zakaz",
+      "image": "B-7.png"
+    },
+    {
+      "id": "B-8",
+      "name": "Zakaz wjazdu pojazdów zaprzęgowych",
+      "category": "zakaz",
+      "image": "B-8.png"
+    },
+    {
+      "id": "B-9",
+      "name": "Zakaz wjazdu rowerów",
+      "category": "zakaz",
+      "image": "B-9.png"
+    },
+    {
+      "id": "B-10",
+      "name": "Zakaz wjazdu motorowerów",
+      "category": "zakaz",
+      "image": "B-10.png"
+    },
+    {
+      "id": "B-11",
+      "name": "Zakaz wjazdu wózków rowerowych i rowerów wielośladowych",
+      "category": "zakaz",
+      "image": "B-11.png"
+    },
+    {
+      "id": "B-12",
+      "name": "Zakaz wjazdu wózków ręcznych",
+      "category": "zakaz",
+      "image": "B-12.png"
+    },
+    {
+      "id": "B-13",
+      "name": "Zakaz wjazdu pojazdów z materiałami wybuchowymi lub łatwo zapalnymi",
+      "category": "zakaz",
+      "image": "B-13.png"
+    },
+    {
+      "id": "B-13a",
+      "name": "Zakaz wjazdu pojazdów z materiałami niebezpiecznymi",
+      "category": "zakaz",
+      "image": "B-13a.png"
+    },
+    {
+      "id": "B-14",
+      "name": "Zakaz wjazdu pojazdów z materiałami, które mogą skazić wodę",
+      "category": "zakaz",
+      "image": "B-14.png"
+    },
+    {
+      "id": "B-15",
+      "name": "Zakaz wjazdu pojazdów o szerokości ponad ... m.",
+      "category": "zakaz",
+      "image": "B-15.png"
+    },
+    {
+      "id": "B-16",
+      "name": "Zakaz wjazdu pojazdów o wysokości ponad ... m.",
+      "category": "zakaz",
+      "image": "B-16.png"
+    },
+    {
+      "id": "B-17",
+      "name": "Zakaz wjazdu pojazdów o długości ponad ... m.",
+      "category": "zakaz",
+      "image": "B-17.png"
+    },
+    {
+      "id": "B-18",
+      "name": "Zakaz wjazdu pojazdów o rzeczywistej masie całkowitej ponad ... t.",
+      "category": "zakaz",
+      "image": "B-18.png"
+    },
+    {
+      "id": "B-19",
+      "name": "Zakaz wjazdu pojazdów o nacisku osi większym niż ... t.",
+      "category": "zakaz",
+      "image": "B-19.png"
+    },
+    {
+      "id": "B-20",
+      "name": "STOP",
+      "category": "zakaz",
+      "image": "B-20.png"
+    },
+    {
+      "id": "B-21",
+      "name": "Zakaz skręcania w lewo",
+      "category": "zakaz",
+      "image": "B-21.png"
+    },
+    {
+      "id": "B-22",
+      "name": "Zakaz skręcania w prawo",
+      "category": "zakaz",
+      "image": "B-22.png"
+    },
+    {
+      "id": "B-23",
+      "name": "Zakaz zawracania",
+      "category": "zakaz",
+      "image": "B-23.png"
+    },
+    {
+      "id": "B-24",
+      "name": "Koniec zakazu zawracania",
+      "category": "zakaz",
+      "image": "B-24.png"
+    },
+    {
+      "id": "B-25",
+      "name": "Zakaz wyprzedzania",
+      "category": "zakaz",
+      "image": "B-25.png"
+    },
+    {
+      "id": "B-26",
+      "name": "Zakaz wyprzedzania przez samochody ciężarowe",
+      "category": "zakaz",
+      "image": "B-26.png"
+    },
+    {
+      "id": "B-27",
+      "name": "Koniec zakazu wyprzedzania",
+      "category": "zakaz",
+      "image": "B-27.png"
+    },
+    {
+      "id": "B-28",
+      "name": "Koniec zakazu wyprzedzania przez samochody ciężarowe",
+      "category": "zakaz",
+      "image": "B-28.png"
+    },
+    {
+      "id": "B-29",
+      "name": "Zakaz używania sygnałów dźwiękowych",
+      "category": "zakaz",
+      "image": "B-29.png"
+    },
+    {
+      "id": "B-30",
+      "name": "Koniec zakazu używania sygnałów dźwiękowych",
+      "category": "zakaz",
+      "image": "B-30.png"
+    },
+    {
+      "id": "B-31",
+      "name": "Pierwszeństwo dla nadjeżdżających z przeciwka",
+      "category": "zakaz",
+      "image": "B-31.png"
+    },
+    {
+      "id": "B-32",
+      "name": "Stój - kontrola celna",
+      "category": "zakaz",
+      "image": "B-32.png"
+    },
+    {
+      "id": "B-33",
+      "name": "Ograniczenie prędkości",
+      "category": "zakaz",
+      "image": "B-33.png"
+    },
+    {
+      "id": "B-34",
+      "name": "Koniec ograniczenia prędkości",
+      "category": "zakaz",
+      "image": "B-34.png"
+    },
+    {
+      "id": "B-35",
+      "name": "Zakaz postoju",
+      "category": "zakaz",
+      "image": "B-35.png"
+    },
+    {
+      "id": "B-36",
+      "name": "Zakaz zatrzymywania się",
+      "category": "zakaz",
+      "image": "B-36.png"
+    },
+    {
+      "id": "B-37",
+      "name": "Zakaz postoju w dni nieparzyste",
+      "category": "zakaz",
+      "image": "B-37.png"
+    },
+    {
+      "id": "B-38",
+      "name": "Zakaz postoju w dni parzyste",
+      "category": "zakaz",
+      "image": "B-38.png"
+    },
+    {
+      "id": "B-39",
+      "name": "Strefa ograniczonego postoju",
+      "category": "zakaz",
+      "image": "B-39.png"
+    },
+    {
+      "id": "B-40",
+      "name": "Koniec strefy ograniczonego postoju",
+      "category": "zakaz",
+      "image": "B-40.png"
+    },
+    {
+      "id": "B-41",
+      "name": "Zakaz ruchu pieszych",
+      "category": "zakaz",
+      "image": "B-41.png"
+    },
+    {
+      "id": "B-42",
+      "name": "Koniec zakazów",
+      "category": "zakaz",
+      "image": "B-42.png"
+    },
+    {
+      "id": "B-43",
+      "name": "Strefa ograniczonej prędkości",
+      "category": "zakaz",
+      "image": "B-43.png"
+    },
+    {
+      "id": "B-44",
+      "name": "Koniec strefy ograniczonej prędkości",
+      "category": "zakaz",
+      "image": "B-44.png"
     }
   ]
 }
