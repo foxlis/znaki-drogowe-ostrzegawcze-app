@@ -13,7 +13,6 @@ interface Sign {
   image: string;
 }
 
-// Mapa obrazów znaków - React Native wymaga statycznych require()
 const signImages: Record<string, any> = {
   "544px-PL_road_sign_A-1.svg.png": require("@/assets/signs/warning/544px-PL_road_sign_A-1.svg.png"),
   "544px-PL_road_sign_A-2.svg.png": require("@/assets/signs/warning/544px-PL_road_sign_A-2.svg.png"),
@@ -57,6 +56,52 @@ const signImages: Record<string, any> = {
   "544px-PL_road_sign_A-32.svg.png": require("@/assets/signs/warning/544px-PL_road_sign_A-32.svg.png"),
   "544px-PL_road_sign_A-33.svg.png": require("@/assets/signs/warning/544px-PL_road_sign_A-33.svg.png"),
   "544px-PL_road_sign_A-34.svg.png": require("@/assets/signs/warning/544px-PL_road_sign_A-34.svg.png"),
+  "B-1.png": require("@/assets/signs/prohibition/B-1.png"),
+  "B-2.png": require("@/assets/signs/prohibition/B-2.png"),
+  "B-3.png": require("@/assets/signs/prohibition/B-3.png"),
+  "B-3a.png": require("@/assets/signs/prohibition/B-3a.png"),
+  "B-4.png": require("@/assets/signs/prohibition/B-4.png"),
+  "B-5.png": require("@/assets/signs/prohibition/B-5.png"),
+  "B-6.png": require("@/assets/signs/prohibition/B-6.png"),
+  "B-7.png": require("@/assets/signs/prohibition/B-7.png"),
+  "B-8.png": require("@/assets/signs/prohibition/B-8.png"),
+  "B-9.png": require("@/assets/signs/prohibition/B-9.png"),
+  "B-10.png": require("@/assets/signs/prohibition/B-10.png"),
+  "B-11.png": require("@/assets/signs/prohibition/B-11.png"),
+  "B-12.png": require("@/assets/signs/prohibition/B-12.png"),
+  "B-13.png": require("@/assets/signs/prohibition/B-13.png"),
+  "B-13a.png": require("@/assets/signs/prohibition/B-13a.png"),
+  "B-14.png": require("@/assets/signs/prohibition/B-14.png"),
+  "B-15.png": require("@/assets/signs/prohibition/B-15.png"),
+  "B-16.png": require("@/assets/signs/prohibition/B-16.png"),
+  "B-17.png": require("@/assets/signs/prohibition/B-17.png"),
+  "B-18.png": require("@/assets/signs/prohibition/B-18.png"),
+  "B-19.png": require("@/assets/signs/prohibition/B-19.png"),
+  "B-20.png": require("@/assets/signs/prohibition/B-20.png"),
+  "B-21.png": require("@/assets/signs/prohibition/B-21.png"),
+  "B-22.png": require("@/assets/signs/prohibition/B-22.png"),
+  "B-23.png": require("@/assets/signs/prohibition/B-23.png"),
+  "B-24.png": require("@/assets/signs/prohibition/B-24.png"),
+  "B-25.png": require("@/assets/signs/prohibition/B-25.png"),
+  "B-26.png": require("@/assets/signs/prohibition/B-26.png"),
+  "B-27.png": require("@/assets/signs/prohibition/B-27.png"),
+  "B-28.png": require("@/assets/signs/prohibition/B-28.png"),
+  "B-29.png": require("@/assets/signs/prohibition/B-29.png"),
+  "B-30.png": require("@/assets/signs/prohibition/B-30.png"),
+  "B-31.png": require("@/assets/signs/prohibition/B-31.png"),
+  "B-32.png": require("@/assets/signs/prohibition/B-32.png"),
+  "B-33.png": require("@/assets/signs/prohibition/B-33.png"),
+  "B-34.png": require("@/assets/signs/prohibition/B-34.png"),
+  "B-35.png": require("@/assets/signs/prohibition/B-35.png"),
+  "B-36.png": require("@/assets/signs/prohibition/B-36.png"),
+  "B-37.png": require("@/assets/signs/prohibition/B-37.png"),
+  "B-38.png": require("@/assets/signs/prohibition/B-38.png"),
+  "B-39.png": require("@/assets/signs/prohibition/B-39.png"),
+  "B-40.png": require("@/assets/signs/prohibition/B-40.png"),
+  "B-41.png": require("@/assets/signs/prohibition/B-41.png"),
+  "B-42.png": require("@/assets/signs/prohibition/B-42.png"),
+  "B-43.png": require("@/assets/signs/prohibition/B-43.png"),
+  "B-44.png": require("@/assets/signs/prohibition/B-44.png"),
 };
 
 export default function TestScreen() {
@@ -69,9 +114,8 @@ export default function TestScreen() {
   const [usedSigns, setUsedSigns] = useState<Set<number>>(new Set());
 
   useEffect(() => {
-    // Filtruj tylko znaki ostrzegawcze
     const warningSigns = signsData.signs.filter(
-      (sign) => sign.category === "ostrzegawcze",
+      (sign) => sign.category === "ostrzegawcze" || sign.category === "zakaz",
     );
     setSigns(warningSigns);
     if (warningSigns.length > 0) {
@@ -260,11 +304,11 @@ const styles = StyleSheet.create({
     padding: 20,
     backgroundColor: "rgba(0, 0, 0, 0.05)",
     borderRadius: 15,
-    minHeight: 250,
+    minHeight: 150,
   },
   signImage: {
-    width: 200,
-    height: 200,
+    width: 150,
+    height: 150,
   },
   answersContainer: {
     width: "100%",
@@ -273,7 +317,7 @@ const styles = StyleSheet.create({
   },
   answerButton: {
     backgroundColor: "#E8E8E8",
-    padding: 18,
+    padding: 8,
     borderRadius: 10,
     borderWidth: 2,
     borderColor: "#CCCCCC",
