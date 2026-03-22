@@ -190,4 +190,4 @@ ZnakiDrogaApp/
 
 ## Licencja
 
-Private project
+MIT
