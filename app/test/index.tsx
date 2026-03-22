@@ -278,7 +278,7 @@ const styles = StyleSheet.create({
   },
   header: {
     alignItems: "center",
-    marginBottom: 20,
+    marginBottom: 10,
   },
   title: {
     marginBottom: 10,
@@ -300,8 +300,8 @@ const styles = StyleSheet.create({
     width: "100%",
     alignItems: "center",
     justifyContent: "center",
-    marginBottom: 30,
-    padding: 20,
+    marginBottom: 10,
+    padding: 10,
     backgroundColor: "rgba(0, 0, 0, 0.05)",
     borderRadius: 15,
     minHeight: 150,
@@ -312,12 +312,12 @@ const styles = StyleSheet.create({
   },
   answersContainer: {
     width: "100%",
-    gap: 15,
-    marginBottom: 20,
+    gap: 10,
+    marginBottom: 5,
   },
   answerButton: {
     backgroundColor: "#E8E8E8",
-    padding: 8,
+    padding: 2,
     borderRadius: 10,
     borderWidth: 2,
     borderColor: "#CCCCCC",
@@ -331,7 +331,7 @@ const styles = StyleSheet.create({
     borderColor: "#DC3545",
   },
   answerText: {
-    fontSize: 16,
+    fontSize: 14,
     textAlign: "center",
     color: "#1A1A1A",
     fontWeight: "500",
@@ -348,11 +348,11 @@ const styles = StyleSheet.create({
     width: "100%",
     alignItems: "center",
     marginTop: 10,
-    marginBottom: 20,
+    marginBottom: 10,
   },
   feedbackText: {
-    fontSize: 18,
-    marginBottom: 15,
+    fontSize: 14,
+    marginBottom: 10,
   },
   feedbackCorrect: {
     color: "#28A745",
