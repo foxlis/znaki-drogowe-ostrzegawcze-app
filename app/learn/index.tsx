@@ -15,7 +15,6 @@ interface Sign {
 
 type LearnCategory = "ostrzegawcze" | "zakaz";
 
-// Mapa obrazów znaków - React Native wymaga statycznych require()
 const signImages: Record<string, any> = {
   "544px-PL_road_sign_A-1.svg.png": require("@/assets/signs/warning/544px-PL_road_sign_A-1.svg.png"),
   "544px-PL_road_sign_A-2.svg.png": require("@/assets/signs/warning/544px-PL_road_sign_A-2.svg.png"),
@@ -282,7 +281,7 @@ const styles = StyleSheet.create({
   },
   header: {
     alignItems: "center",
-    marginBottom: 20,
+    marginBottom: 10,
   },
   title: {
     marginBottom: 10,
@@ -347,8 +346,8 @@ const styles = StyleSheet.create({
     width: "100%",
     alignItems: "center",
     justifyContent: "center",
-    marginBottom: 30,
-    padding: 20,
+    marginBottom: 10,
+    padding: 10,
     backgroundColor: "rgba(0, 0, 0, 0.05)",
     borderRadius: 15,
     minHeight: 150,
