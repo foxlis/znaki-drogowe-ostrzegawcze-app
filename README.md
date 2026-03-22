@@ -14,7 +14,7 @@ Aplikacja mobilna do nauki polskich znaków drogowych. Ucz się znaków ostrzega
 
 Pobierz najnowszą wersję preview aplikacji na android:
 
-- [📱 Pobierz wersję preview](https://expo.dev/accounts/foxlis/projects/ZnakiDrogaApp/builds/62b76eea-1090-41ae-87e5-fbfd7b9acf3e)
+- [📱 Pobierz wersję preview](https://expo.dev/accounts/foxlis/projects/ZnakiDrogaApp/builds/e631c0f9-2064-415e-ad52-1a113cac8677)
 
 Wersja preview zawiera pełną funkcjonalność aplikacji i jest gotowa do testowania na urządzeniach mobilnych.
 
